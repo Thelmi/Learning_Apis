@@ -1,0 +1,102 @@
+
+// api: application programming interface is a set of rules that 
+allows two applications to communicate with each other
+
+/* for example:
+
+"Uber" might seem as one application, 
+but it is actually a collection of applications 
+that work together to provide a service.
+and for each of these applications, there a team of developers
+who are responsible for the development and maintenance 
+of the application.
+
+	/* uber example:
+		Real-world example:
+		- When you open Uber, the app needs to:
+		1. Get your location (uses Google Maps API)
+		2. Find nearby drivers (uses Uber's internal Driver API)
+		3. Process payments (uses Stripe/PayPal API)
+		4. Send notifications (uses Push Notification API)
+	*/
+
+many of these applications are built on top of each other,
+they need data to be shared between them.
+this data is shared through an api.
+
+Api has a multiple of pieces you can connect to it.
+
+for example: for backend, you can have piece for login,
+forget password and create account.
+
+/* data flow example: (frontend and backend)
+
+	Frontend and Backend API Example:
+
+	1. Login Flow Example:
+	Frontend (User Interface):
+	- User types email: john@email.com
+	- User types password: ****
+
+	↓ Frontend sends API request ↓
+	POST /api/login
+	{
+		"email": "john@email.com",
+		"password": "hashedPassword123"
+	}
+
+	↓ Backend processes request ↓
+	Backend (Server):
+	1. Receives login request
+	2. Checks database for user
+	3. Verifies password
+	4. Creates session token
+
+	↓ Backend sends API response ↓
+	{
+		"status": "success",
+		"token": "eyJhbGc....",
+		"user": {
+			"name": "John",
+			"email": "john@email.com"
+		}
+	}
+*/
+
+api pieces are called endpoints. 
+endpoints are the way you can connect to the api.
+
+There is also public api, 
+	which is the api that is available to the public.
+	if you need to get data from youtube as an example,
+	you can use the public api.
+
+Public api can't make it 100% open, or
+people will abuse it.
+They can spam and basically overload the server.
+until it shuts down.
+
+There is were api keys come in.
+
+thinks of it as a username and password combined.
+that identify you as a user. 
+if they want to, they can see all the data you
+are requesting. They all set a rule for how many
+requests you can make per hour. 
+
+Its fun, becausse there is an api for everything.
+
+for example:
+you can use multiple api and your costum code
+can be the glue that holds them together.
+
+How exactly you know how to use the api?
+that is where the  Api documentation comes in.
+
+Api documentation is a set of rules that
+you need to follow to use the api.
+
+you need to read the documentation to know how to use the api.
+
+*/
+
