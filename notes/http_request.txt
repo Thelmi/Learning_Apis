@@ -113,7 +113,85 @@ post an information and so on.
 		when refering to request body
 
 	payload is actually what you are sending to the server
+
+	thus, request body and request payload are the same thing
 */	
+
+A get request does not have a request body since you a requesting to get information
+
+on the other hand, a post request has a request body since you are sending information to the server
+
+for example:
+	when you post on faceboook the request body will contain the actual message you are posting
+
+an exmaple of a post request is:
+	URL: https://www.facebook.com/
+	Request method: POST
+	Headers: USER-AGENT: IPHONE
+	Body: {"message": "I am learning about http requests"}
+
+Now lets see how the server responds to the request
+
+The HTTP response message has a similar structure to the request message
+
+/* HTTP response message contains:
+	
+	1. Status code
+	3. Headers
+	4. Body
+
+*/
+
+// 1) First section in the response message is the status code:
+
+The status code is a three-digit code that indicates the result of the request
+
+
+
+/*
+// most common status codes:
+	200: OK
+	404: Not Found
+
+	other status codes:
+		100: Informational
+		101: Switching Protocols
+		200: OK
+		201: Created
+		202: Accepted
+		204: No Content
+		300: Redirection
+		301: Moved Permanently
+		302: Found
+		400: Client Error
+		401: Unauthorized
+		403: Forbidden
+		404: Not Found
+		500: Server Error
+		.................
+		................
+		................
+*/
+
+Headers:
+for example:
+	in what what format is the data being sent?
+		html, json, xml, etc.
+	content-type: text/html. It means that the client is receiving html data that should be parsed
+
+Body:
+	its the main information the server is sending to the client
+
+response message structure:
+	Status code : 200
+	Headers:
+		content-type: text/html
+	Body:
+		<html>
+			<body>
+				<h1>Hello, world!</h1>
+			</body>
+		</html>
 
 
 
