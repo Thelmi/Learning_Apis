@@ -1,0 +1,120 @@
+// Http does not even care if you are accessing 
+a regular web page or a calling an api.
+
+/*
+	What this means:
+		HTTP (Hypertext Transfer Protocol) is like a delivery service that:
+		Doesn't care what's in the package
+		Just delivers messages back and forth
+*/
+
+// how Http message structured
+
+// when a client sends a message to a server 
+it is called a request, however
+when a server sends a message to a client
+it is called a response
+
+/* 	In other words:
+
+	Http request is a request to a server.
+	Http response is a response from a server.
+
+*/ 
+
+// HTTP request message:
+
+The HTTP request message contains:
+/*
+	1. URL
+	2. Request method
+	3. Headers
+	4. Body
+*/
+
+Firat section in the request message is the URL: (Uniform Resource Locator)
+/*
+	URL is the address of 
+	the resource on the server.
+*/
+
+/* Think of it like a physical address:
+
+	Protocol = Method of transport (car, bike, walk)
+	Domain = City and street
+	Path = Building and floor number
+	Query Parameters = Specific instructions (like "Room 404, ask for John")
+
+*/
+
+URLs are used to identify the resource on the web pages.
+
+an example of a URL is:
+	https://www.npr.org/sections/news/
+
+	protocol = https
+	domain = www.npr.org
+	path = sections/news/, it looks like a file path
+
+2) Second section in the request message is the request method:
+
+the Http protocol describes multiple request methods:
+
+/
+most common methods:
+	1. GET
+	2. POST
+
+/* making a GET request:
+	when you type in an address in the browser, 
+	you are actually 
+
+/* making a POST request:
+	when you post a status update on facebook,
+	you are actually making a POST request.
+
+The browser selects the most appropriate method for the task.
+and its instruted by the website that you are visiting.
+
+// some times the request method is called http verb
+because it indicates a an action
+
+basically, you want to get an information, you want to 
+post an information and so on.
+
+/*
+	GET:
+		Retrieves information from the server.
+		Used to read data.
+		Does not modify the server's state.
+*/
+
+3) Third section in the request message is the headers:
+	Headers are used to provide a meta-information
+	its just an additional information about the information
+	its not the main information the we are sending
+
+	for example:
+		if I am a moile client and I am sending a request to a server
+		then the headers will contain information about the mobile client
+		like the mobile model, the mobile operating system, the mobile network, etc.
+		what am I exactly? so the server keeps it mind 
+		so it can send the appropriate response
+
+	more friendly example:
+	"Hey I am a mobile client, give me the latest news"
+
+4) Fourth section in the request message is the body:
+	its the main information the we are sending to the server
+
+/*
+	A quick side note:
+		sometimes you might encounter the term request payload
+		when refering to request body
+
+	payload is actually what you are sending to the server
+*/	
+
+
+
+
