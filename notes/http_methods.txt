@@ -1,0 +1,80 @@
+
+/* The most common HTTP methods are:
+	GET
+	POST
+	PUT
+	DELETE
+*/
+
+// POST request:
+	 a pot method is used  when the client 
+	 wants to send data to the server
+
+/* physical example:
+
+Real-World Analogy: 
+Think of POST like filling out a form:
+- You fill out information
+- Submit it
+- Server creates something new with that information
+
+Example 1 - Online Shopping:
+1. You: Add items to cart and checkout
+   POST /api/orders
+   {
+       "items": ["milk", "bread", "eggs"],
+       "address": "123 Main St"
+   }
+
+2. Server: Creates new order
+   Response:
+   {
+       "orderId": "12345",
+       "message": "Order confirmed!"
+   }
+*/ 
+
+// GET request: is typically used to retrieve data from the server
+
+/* physical example:
+	after a while you want to check the status of your order
+	you go to the website and you look at the status of your order
+	you do this by sending a get request to the server
+	the server will look up your order in the database and if it exists
+	or you are allowed to see that order, it will return the status of your order
+	when you browse internet and you see new information, you are getting it from the server by sending a get request
+*/
+
+// PUT request: is used to update existing data on the server
+
+/* physical example:
+	Now, lets say you are looking at your shopping cart and you notice that you have an item that you don't want and then you realize that you forgot to add milk to your cart
+
+	you can then send a put request to the server to update your cart
+	and the server will update this information in the database
+
+	note: like this you are not creating new data, you are updating existing data that the difference between post and put is that post
+
+	so the server will say we haven't shipped this item yet, but we 
+	have removed the unwanted item from your cart and we have added milk to your cart, and you will still have the same id for your order with a payment method and everything else
+*/
+
+// DELETE request: is used to delete data from the server
+
+/* physical example:
+	lets say you want to cancel your order
+	you can send a delete request to the server and the server will delete the order from the database and if money has been charged to your account, the server will refund your money
+*/
+
+There are so many more http methods, but these are the most common ones
+
+// How do I know which http method to use?
+
+This depend on the server if its an api this typically is documented
+in the api documentation
+
+it totally depends on the server what request you need to send what you want to do, read the documentation to find out what request you need to send
+
+all the above was the ideal case the common practice but not always the case some dont follow this practice
+
+

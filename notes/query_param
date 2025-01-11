@@ -1,0 +1,34 @@
+// query means to search or to ask a question
+
+// parameter means a value that you can set to refine your search
+
+/* how a a query parameter looks like
+
+https://example.com/search?
+
+A '?' is the indicator for the start of the query parameter
+
+https://example.com/search?name=John
+
+the way that a parameter is written is by specifying a name
+and then = sign and then the value (key=value)
+
+the case above, name is the key and John is the value
+
+https://example.com/search?name=John&age=17
+
+if you want to add more parameters, use '&' and then the key and value
+
+two query parameters has been specified in the case above
+
+"?name=John&age=17" this is the query string
+
+*/
+
+things to note:
+/*
+	1. query parameters are part of the URL
+	2. used to send data to the server
+	3. sometimes they are optional, but sometimes they are required
+	4. the api dictates the names of the parameters
+*/
