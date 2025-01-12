@@ -1,5 +1,11 @@
 // path is the location of the resource you want to access
-
+ 
 // parameter is a value that you can set (variable)
 
 
+/*
+	https://example.com/students/john/grades?order=asc
+
+	"students/john/grades" is the path parameter
+	"?order=asc" is the query parameter
+*/
